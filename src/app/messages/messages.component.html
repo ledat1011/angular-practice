@@ -1,0 +1,5 @@
+<h2>Messages</h2>
+<button type="button" class="clear" (click)="messageService.add(value)">add messages</button>
+<button type="button" class="clear" (click)="messageService.clear()">clear messages</button>
+<input type="text" value="Sydney" [(ngModel)]="value" />
+<div *ngFor='let message of messageService.getMessage()'> {{message}} </div>

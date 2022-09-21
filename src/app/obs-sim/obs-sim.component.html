@@ -1,0 +1,11 @@
+<p>obs-sim works!</p>
+<div>
+    <label for="name">new App Name </label>
+    <input id="name" (keypress)="changeAppName($event)" placeholder="name">
+</div>
+
+<div>
+    <ul>
+        <li *ngFor="let item of app ">{{item.name}}</li>
+    </ul>
+</div>
